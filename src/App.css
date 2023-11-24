@@ -1,7 +1,52 @@
+/* app.css */
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+.content {
+  flex-grow: 1;
+}
+
+.bottom-nav {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly; /* Space out items evenly */
+}
+
+.bottom-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.bottom-nav li {
+  margin: 0;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px; /* Add margin for spacing */
+}
+
+/* Add FontAwesome icons */
+.bottom-nav i {
+  margin-bottom: 5px;
+}
+
+/* Your existing styles below */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
